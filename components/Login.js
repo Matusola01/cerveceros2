@@ -7,8 +7,7 @@ export default function Login() {
 	const [error, setError] = useState(null);
 	const [isLoggingIn, setIsLoggingIn] = useState(true);
 
-	const { login, signup, currentUser } = useAuth();
-	console.log(currentUser);
+	const { login, signup } = useAuth();
 
 	async function submitHandler() {
 		if (!email || !password) {
