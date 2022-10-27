@@ -24,7 +24,7 @@ export default function Navbar() {
 
 				<div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
 					<ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
-						<li>
+						{/* <li>
 							<a
 								href="https://cerveceros2-b8fp8nzhn-matusola01.vercel.app"
 								className="border-gray-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full "
@@ -32,7 +32,7 @@ export default function Navbar() {
 							>
 								Home
 							</a>
-						</li>
+						</li> */}
 						<li>
 							<a
 								class="border-gray-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full"
