@@ -1,4 +1,4 @@
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import { AuthProvider } from '../context/AuthContext';
 
 import '../styles/globals.css';

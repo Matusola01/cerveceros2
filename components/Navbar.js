@@ -1,5 +1,6 @@
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase';
+import Image from 'next/image';
 
 export default function Navbar() {
 	function handleOnClick(e) {
@@ -11,7 +12,7 @@ export default function Navbar() {
 		<nav className="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
 			<div className="container flex flex-wrap justify-between items-center mx-auto">
 				<a href="http://localhost:3000/" className="flex items-center">
-					<img
+					<Image
 						src="https://www.cervezasalta.com.ar/img/logo-salta.png"
 						className="mr-3 h-6 sm:h-10"
 						alt="Cerveza Salta Logo"
