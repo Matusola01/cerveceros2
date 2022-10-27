@@ -3,43 +3,43 @@ import { useAuth } from '../context/AuthContext';
 import CredH from '../Images/cred-H.jpeg';
 import CredM from '../Images/cred-M.jpeg';
 
-export default function Credential() {
+export default function Credential({ props }) {
 	const { currentUser } = useAuth();
+	console.log(props);
 
-	// if (currentUser === 'Hombre') {
-	return (
-		<div className="flex flex-wrap justify-center mt-20">
-			<div className="relative overflow-hidden flex w-2/3 h-2/3 rounded-r ">
-				<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
-					<Image src={CredH} className="h-full" />
-					<span className="absolute self-start p-2 text-neutral-900 text-4xl leading-none font-semibold mt-16">
-						<h2>{currentUser.email}</h2>
-						{/* <h2>{data.dni}</h2>
-						<h2>{data.relation}</h2>
-						<h2>{data.etc}</h2> */}
-						hola
-					</span>
-				</figure>
+	if (props.genre === 'Hombre') {
+		return (
+			<div className="flex flex-wrap justify-center mt-20">
+				<div className="relative overflow-hidden flex w-2/3 h-2/3 rounded-r ">
+					<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
+						<Image src={CredH} className="h-full" />
+						<span className="absolute self-start p-2 text-neutral-900 text-4xl leading-none font-semibold ml-40 mt-16">
+							<h2>{props.name}</h2>
+							<h2>{props.DNI}</h2>
+							<h2>{props.relationship}</h2>
+						</span>
+					</figure>
+				</div>
 			</div>
-		</div>
-	);
-	// } else {
-	// 	return (
-	// 		<div className="flex flex-wrap justify-center mt-20">
-	// 			<div className="relative overflow-hidden flex w-2/3 h-2/3 rounded-r ">
-	// 				<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
-	// 					<Image src={CredM} className="h-full" />
-	// 					<span className="absolute self-start p-2 text-neutral-900 text-4xl leading-none font-semibold mt-16">
-	// 						<h2>{currentUser.email}</h2>
-	// 						{/* <h2>{data.dni}</h2>
-	// 					<h2>{data.relation}</h2>
-	// 					<h2>{data.etc}</h2> */}
-	// 						hola
-	// 					</span>
-	// 				</figure>
-	// 			</div>
-	// 		</div>
-	// 	);
-	// }
-	// return <div>hola</div>;
+		);
+	} else {
+		return (
+			<div className="flex flex-wrap justify-center mt-20">
+				<div className="relative overflow-hidden flex w-2/3 h-2/3 rounded-r ">
+					<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
+						<Image src={CredH} className="h-full" />
+						<span className="absolute self-start p-2 text-neutral-900 text-4xl leading-none font-semibold mt-16">
+							{props.map(e => {
+								<div>
+									<h2>{e.name}</h2>
+									<h2>{e.DNI}</h2>
+									<h2>{e.relationship}</h2>
+								</div>;
+							})}
+						</span>
+					</figure>
+				</div>
+			</div>
+		);
+	}
 }

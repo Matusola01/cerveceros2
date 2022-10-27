@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Form from './Form';
 import Credential from './Credential';
 import { useAuth } from '../context/AuthContext';
@@ -7,22 +7,51 @@ import app from '../firebase';
 
 const db = getFirestore(app);
 
-export default function Validator({ users }) {
+export default function Validator() {
 	const { currentUser } = useAuth();
-	const raro = getServerSideProps();
-	const raro2 = raro.then(res => res.props.users);
-	const raro3 = raro2.then(res => res[0]);
-	console.log(users);
-	return <div>hola soy german </div>;
+	const user = getUser();
+	const userrrr = otrafuncion();
+	console.log(userrrr[0]);
+	// console.log(user);
+	const userFind = user.then(e => e);
+	// console.log(userFind);
+	// const arr = [];
+	// const raro = await getUser().then(
+	// 	e => {
+	// 		return e.filter(e => e.email === currentUser.email);
+	// 	}
+	// 	// e.forEach(e => {
+	// 	// 	if (e.email === currentUser.email) {
+	// 	// 		// console.log(e);
+	// 	// 		return arr.push(e);
+	// 	// 	}
+	// 	// })
+	// );
+
+	// const arrMap = arr;
+	// console.log(raro);
 }
 
-export const getServerSideProps = async context => {
-	const querySnapshot = await getDocs(collection(db, 'users'));
-	// console.log(querySnapshot);
-	const user = [];
-	querySnapshot.forEach(doc => {
-		user.push({ ...doc.data(), id: doc.id });
-	});
+export const getUser = async () => {
+	try {
+		const { currentUser } = useAuth();
+		const querySnapshot = await getDocs(collection(db, 'users'));
+		// console.log(querySnapshot);
+		const user = [];
+		querySnapshot.forEach(doc => {
+			user.push({ ...doc.data(), id: doc.id });
+		});
+		const maping = user.filter(e => e.email === currentUser.email);
+		// console.log(maping);
+
+		return maping;
+	} catch (error) {
+		console.log(error);
+	}
+};
+
+const otrafuncion = async () => {
+	const user = setTimeout(await getUser(), 4000);
 	console.log(user);
-	return { props: { users: user } };
+	return user;
 };
