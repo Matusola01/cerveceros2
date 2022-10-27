@@ -26,7 +26,7 @@ export default function Navbar() {
 					<ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
 						<li>
 							<a
-								href="http://localhost:3000/"
+								href="https://cerveceros2-b8fp8nzhn-matusola01.vercel.app"
 								className="border-gray-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full "
 								aria-current="page"
 							>
