@@ -5,33 +5,16 @@ import { useAuth } from '../context/AuthContext';
 import Login from '../components/Login';
 import Head from 'next/head';
 import Form from '../components/Form';
-import Validator from '../components/Validator';
 
 import app from '../firebase';
 import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore';
-import { async } from '@firebase/util';
+
 const db = getFirestore(app);
 
 export default function Home({ users }) {
 	const { currentUser } = useAuth();
 	if (currentUser) {
-		const userLoged = users.find(user => user.email === currentUser.email);
-		console.log(userLoged);
-		// }
-		// 	// user => {
-		// 	// if (currentUser.email === user.email) {
-		// 	// 	return user;
-		// 	// }
-		// 	// return false;
-		// });
-		// console.log(userLoged);
-		// // const finalUser = userLoged.filter(e => {
-		// // 	if (typeof e !== 'boolean') {
-		// // 		return e;
-		// // 	}
-		// // });
-		// // console.log(userLoged);
-
+		const userLoged = users?.find(user => user.email === currentUser.email);
 		return (
 			<div>
 				<Head>
