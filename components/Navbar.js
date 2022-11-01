@@ -9,12 +9,12 @@ export default function Navbar() {
 	}
 
 	return (
-		<nav className="p-3 bg-gray-50 rounded border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+		<nav className="p-3 bg-gray-50 rounded border-gray-800 dark:bg-gray-800 dark:border-gray-700">
 			<div className="container flex flex-wrap justify-between items-center mx-auto">
-				{/* <a href="http://localhost:3000/" className="flex items-center">
+				{/* <a href="/home" className="flex items-center">
 					<Image
 						src="https://www.cervezasalta.com.ar/img/logo-salta.png"
-						className="mr-3 h-6 sm:h-10"
+						className="mr-3 h-full w-full sm:h-10"
 						alt="Cerveza Salta Logo"
 					/> */}
 				<span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
