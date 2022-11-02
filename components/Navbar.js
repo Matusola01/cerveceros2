@@ -9,12 +9,12 @@ export default function Navbar() {
 	}
 
 	return (
-		<nav className="p-3 bg-gray-50 rounded border-gray-800 dark:bg-gray-800 dark:border-gray-700">
+		<nav className="p-3 rounded border-gray-800 bg-gray-800">
 			<div className="container flex flex-wrap justify-between items-center mx-auto">
 				<div className="flex items-center">
 					<img
 						src="https://www.cervezasalta.com.ar/img/logo-salta.png"
-						className="mr-3 h-full w-full sm:h-10"
+						className="mr-3 h-full w-full h-10"
 						alt="Cerveza Salta Logo"
 					/>
 					<span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
@@ -22,8 +22,8 @@ export default function Navbar() {
 					</span>
 				</div>
 
-				<div className="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
-					<ul className="flex flex-col mt-4 bg-gray-50 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+				<div className="hidden w-full min-[320px]:block min-[320px]:w-auto " id="navbar-solid-bg">
+					<ul className="flex flex-col mt-4 bg-gray-50 rounded-lg min-[320px]:flex-row min-[320px]:space-x-8 min-[320px]:mt-0 min-[320px]:text-sm min-[320px]:font-medium min-[320px]:border-0 min-[320px]:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 ">
 						{/* <li>
 							<a
 								href="https://cerveceros2-b8fp8nzhn-matusola01.vercel.app"
