@@ -17,7 +17,7 @@ export default function Navbar() {
 						className="mr-3 h-full w-full h-10"
 						alt="Cerveza Salta Logo"
 					/>
-					<span className="self-center text-xl font-semibold min-[320px]:text-sm md:text-lg whitespace-nowrap dark:text-white">
+					<span className="self-center text-xl font-semibold min-[320px]:text-xs md:text-lg whitespace-nowrap dark:text-white">
 						Sindicato de Cerveceros de Salta
 					</span>
 				</div>
