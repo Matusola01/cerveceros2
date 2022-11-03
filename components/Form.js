@@ -33,7 +33,7 @@ export default function Form() {
 		setData({ ...inicalVal });
 
 		//que esta funcion lo que hace es una redireccion
-		router.push('/home');
+		router.push('/');
 	};
 	return (
 		<div className="flex flex-wrap justify-center mt-20">
@@ -48,7 +48,7 @@ export default function Form() {
 								Nombre y apellido
 							</label>
 							<input
-								class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 								id="grid-password"
 								type="string"
 								placeholder="Nombre y apellido"
@@ -67,7 +67,7 @@ export default function Form() {
 								Confirmar Email
 							</label>
 							<input
-								class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 								id="grid-password"
 								type="string"
 								placeholder="Utilice el mismo email con el que inicio sesión"
@@ -87,7 +87,7 @@ export default function Form() {
 							</label>
 							<div class="relative">
 								<select
-									class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									class="block appearance-none w-full bg-gray-200 border border-gray-500 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 									id="grid-state"
 									onChange={handleOnChange}
 									name="genre"
@@ -117,7 +117,7 @@ export default function Form() {
 							</label>
 							<div class="relative">
 								<select
-									class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+									class="block appearance-none w-full bg-gray-200 border border-gray-500 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 									id="grid-state"
 									onChange={handleOnChange}
 									name="relationship"
@@ -152,7 +152,7 @@ export default function Form() {
 								DNI
 							</label>
 							<input
-								class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+								class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-500 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
 								id="grid-zip"
 								type="text"
 								name="DNI"
@@ -164,7 +164,7 @@ export default function Form() {
 					</div>
 					<div class="focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 mt-10 text-center">
 						<button
-							class="border-gray-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full "
+							class=" bg-gray-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-full "
 							onClick={handleOnSubmit}
 							aria-current="page"
 							type="submit"
