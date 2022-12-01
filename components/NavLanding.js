@@ -11,6 +11,11 @@ const NavLanding = () => {
 		setNav(!nav);
 	};
 
+	function handleOnClick(e) {
+		e.preventDefault();
+		window.location.href = 'login';
+	}
+
 	useEffect(() => {
 		const changeColor = () => {
 			if (window.scrollY >= 90) {
@@ -34,6 +39,23 @@ const NavLanding = () => {
 						alt="Cerveza Salta Logo"
 					/>
 				</Link>
+				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
+					<li className="p-4">
+						<Link href="/">Inicio</Link>
+					</li>
+					<li className="p-4">
+						<Link href="/about">Quienes Somos</Link>
+					</li>
+					<li className="p-4">
+						<Link href="/features">Novedades</Link>
+					</li>
+					<button
+						onClick={handleOnClick}
+						className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-2 px-4 rounded-full"
+					>
+						Ingresar
+					</button>
+				</ul>
 			</div>
 		</div>
 	);
