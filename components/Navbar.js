@@ -42,7 +42,7 @@ const Navbar = () => {
 					/>
 				</Link>
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-					<li className="p-4">
+					{/* <li className="p-4">
 						<Link href="/#">Home</Link>
 					</li>
 					<li className="p-4">
@@ -50,9 +50,9 @@ const Navbar = () => {
 					</li>
 					<li className="p-4">
 						<Link href="/#work">Novedades</Link>
-					</li>
+					</li> */}
 					<li className="p-4">
-						<Link href="/#contact">Credenciales</Link>
+						<Link href="/#">Credenciales</Link>
 					</li>
 					<li className="p-4">
 						<a
