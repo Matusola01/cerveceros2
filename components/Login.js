@@ -17,6 +17,7 @@ export default function Login() {
 		if (isLoggingIn) {
 			try {
 				await login(email, password);
+				window.location.href = '/';
 			} catch (err) {
 				setError('Incorrect email or password');
 			}

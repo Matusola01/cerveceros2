@@ -2,7 +2,6 @@ import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
-// TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
 	apiKey: 'AIzaSyCIaTPLTqC2Gooes_1hjDaahYSBmeAbtYA',
 	authDomain: 'cerveceros-c4a9b.firebaseapp.com',

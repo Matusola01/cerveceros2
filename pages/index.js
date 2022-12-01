@@ -5,9 +5,11 @@ import { useAuth } from '../context/AuthContext';
 import Login from '../components/Login';
 import Head from 'next/head';
 import Form from '../components/Form';
+import NavLanding from '../components/NavLanding';
 
 import app from '../firebase';
 import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore';
+import Hero from '../components/Hero';
 
 const db = getFirestore(app);
 
@@ -30,7 +32,13 @@ export default function Home({ users }) {
 			</div>
 		);
 	} else {
-		return <Login />;
+		// return <Login />;
+		return (
+			<div>
+				<NavLanding />
+				<Hero />
+			</div>
+		);
 	}
 }
 
