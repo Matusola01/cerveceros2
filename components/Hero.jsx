@@ -15,7 +15,7 @@ const Hero = ({ heading, message }) => {
 				<p className="py-5 text-xl">{message}</p>
 				<button
 					onClick={handleOnClick}
-					className="w-full max-w-[40ch] border border-black border-solid text-slate-900 uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-gray-800 after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-slate-200"
+					className="ml-48 w-full max-w-[40ch] border border-white border-solid text-slate-100 uppercase py-2 duration-300 relative after:absolute after:top-0 after:right-full after:bg-white after:z-10 after:w-full after:h-full overflow-hidden hover:after:translate-x-full after:duration-300 hover:text-slate-900"
 				>
 					Ingresar
 				</button>

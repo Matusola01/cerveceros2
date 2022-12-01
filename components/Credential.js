@@ -5,7 +5,7 @@ import CredM from '../Images/cred-M.jpeg';
 export default function Credential({ props }) {
 	if (props?.genre === 'Masculino') {
 		return (
-			<div className="flex flex-wrap justify-center mt-20">
+			<div className="flex flex-wrap justify-center mt-36">
 				<div className="relative overflow-hidden flex w-2/3 h-2/3 rounded-r ">
 					<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
 						<Image src={CredH} className="h-full" />

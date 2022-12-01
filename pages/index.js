@@ -36,7 +36,7 @@ export default function Home({ users }) {
 		return (
 			<div>
 				<NavLanding />
-				<Hero />
+				<Hero heading="Sindicato de Cerveceros de Salta" message=" " />
 			</div>
 		);
 	}
