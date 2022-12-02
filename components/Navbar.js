@@ -52,11 +52,11 @@ const Navbar = () => {
 						<Link href="/#work">Novedades</Link>
 					</li> */}
 					<li className="p-4">
-						<Link href="/#">Credenciales</Link>
+						<Link href="/">Inicio</Link>
 					</li>
 					<li className="p-4">
 						<a
-							className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-2 px-4 rounded-full"
+							className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-4 px-6 rounded-full"
 							onClick={handleOnClick}
 						>
 							Salir
@@ -82,16 +82,15 @@ const Navbar = () => {
 				>
 					<ul>
 						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/">Home</Link>
+							<Link href="/">Inicio</Link>
 						</li>
-						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/#gallery">Gallery</Link>
-						</li>
-						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/work">Work</Link>
-						</li>
-						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/contact">Contact</Link>
+						<li className="p-4 text-4xl">
+							<a
+								className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-2 px-4 rounded-full"
+								onClick={handleOnClick}
+							>
+								Salir
+							</a>
 						</li>
 					</ul>
 				</div>

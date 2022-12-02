@@ -56,6 +56,42 @@ const NavLanding = () => {
 						Ingresar
 					</button>
 				</ul>
+				{/* Mobile Button */}
+				<div onClick={handleNav} className="block sm:hidden z-10">
+					{nav ? (
+						<AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+					) : (
+						<AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+					)}
+				</div>
+				{/* Mobile Menu */}
+				<div
+					className={
+						nav
+							? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+							: 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'
+					}
+				>
+					<ul>
+						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+							<Link href="/">Inicio</Link>
+						</li>
+						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+							<Link href="/about">Quienes Somos</Link>
+						</li>
+						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+							<Link href="/features">Novedades</Link>
+						</li>
+						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+							<button
+								onClick={handleOnClick}
+								className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-2 px-4 rounded-full"
+							>
+								Ingresar
+							</button>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	);
