@@ -7,5 +7,10 @@
 }
 
 .custom-img {
-	background-image: url('https://informatesalta.com.ar/download/multimedia.grande.aff9c2040196849a.30392053414c544120524f4a415f6772616e64652e6a7067.jpg');
+	background-image: url('../Images/land.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-attachment: fixed;
+	background-size: cover;
 }

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
@@ -18,7 +19,7 @@ const NavLanding = () => {
 
 	useEffect(() => {
 		const changeColor = () => {
-			if (window.scrollY >= 90) {
+			if (window.scrollY >= 1000000) {
 				setColor('#ffffff');
 				setTextColor('#000000');
 			} else {
@@ -51,7 +52,7 @@ const NavLanding = () => {
 					</li>
 					<button
 						onClick={handleOnClick}
-						className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-2 px-4 rounded-full"
+						className="border-gray-700 hover:bg-black/30 text-white py-0.5 px-4 rounded-lg"
 					>
 						Ingresar
 					</button>
@@ -85,7 +86,7 @@ const NavLanding = () => {
 						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
 							<button
 								onClick={handleOnClick}
-								className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-2 px-4 rounded-full"
+								className="border-gray-700 hover:bg-black/30 text-white py-0.5 px-4 rounded-lg"
 							>
 								Ingresar
 							</button>
