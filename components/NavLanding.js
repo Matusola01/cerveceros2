@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import NavImg from '../Images/navImg.png';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
@@ -33,13 +34,26 @@ const NavLanding = () => {
 	return (
 		<div style={{ backgroundColor: `${color}` }} className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
 			<div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
-				<Link href="/">
-					<img
-						src="https://www.cervezasalta.com.ar/img/logo-salta.png"
-						className=" h-24 w-24"
+				<div>
+
+					{/* <Image
+						src='https://cdn.discordapp.com/attachments/812652267320115231/1052996507042848890/navImg.png'
+						className="h-20 w-20"
 						alt="Cerveza Salta Logo"
+					/> */}
+					<Image
+						  alt="Mountains"
+						  src={NavImg}
+						  placeholder="blur"
+						  width={125}
+						  height={125}
+						  style={{
+							maxWidth: '100%',
+							height: 'auto',
+						  }}
 					/>
-				</Link>
+				</div>
+			
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
 					<li className="p-4">
 						<Link href="/">Inicio</Link>

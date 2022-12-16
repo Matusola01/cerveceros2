@@ -1,16 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 * {
 	font-family: 'Jost', sans-serif;
 }
 
-.custom-img {
-	background-image: url('../Images/land.jpg');
+.custom-img-big {
+	background-image: url('../Images/big.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-origin: content-box;
 	background-attachment: fixed;
 	background-size: cover;
 }
+.custom-img-medium {
+	background-image: url('../Images/medium.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.custom-img-small {
+	background-image: url('../Images/small.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.custom-img-phone {
+	background-image: url('../Images/phone.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
