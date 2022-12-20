@@ -3,6 +3,8 @@ import { auth } from '../firebase';
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import NavImg from '../Images/navImg.png';
+import Image from 'next/image';
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
@@ -35,10 +37,16 @@ const Navbar = () => {
 		<div style={{ backgroundColor: `${color}` }} className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
 			<div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
 				<Link href="/">
-					<img
-						src="https://www.cervezasalta.com.ar/img/logo-salta.png"
-						className=" h-24 w-24"
-						alt="Cerveza Salta Logo"
+					<Image
+						alt="Mountains"
+						src={NavImg}
+						placeholder="blur"
+						width={125}
+						height={125}
+						style={{
+							maxWidth: '100%',
+							height: 'auto',
+						}}
 					/>
 				</Link>
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
@@ -56,7 +64,7 @@ const Navbar = () => {
 					</li>
 					<li className="p-4">
 						<a
-							className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-4 px-6 rounded-full"
+							className="border-gray-700 hover:bg-black/30 text-white py-0.5 px-4 rounded-lg"
 							onClick={handleOnClick}
 						>
 							Salir
