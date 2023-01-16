@@ -42,10 +42,10 @@ export default function Home({ users }) {
 					<link rel="icon" href="https://www.cervezasalta.com.ar/img/logo-salta.png" />
 				</Head>
 
-			<div>
-				<NavLanding />
-				<Hero heading="SINDICATO CERVECEROS SALTA"  message=" " />
-			</div>
+				<div>
+					<NavLanding />
+					<Hero heading="SINDICATO CERVECEROS SALTA" message=" " />
+				</div>
 			</div>
 		);
 	}

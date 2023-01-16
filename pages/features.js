@@ -7,7 +7,7 @@ const features = () => {
 		<div>
 			<NavLanding />
 			<Hero
-				heading="Novedades"
+				heading="NOVEDADES"
 				message="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper interdum nulla eget dictum. Etiam finibus augue augue, tempus mattis neque gravida et. Aliquam pretium risus ac sem euismod, id ultricies ligula sollicitudin. Aenean tincidunt urna in diam ultricies, et laoreet metus convallis. Etiam eget semper sapien. Nulla rutrum feugiat efficitur. Mauris ex velit, accumsan non dolor sit amet, accumsan molestie nunc. Maecenas vitae posuere augue."
 			/>
 		</div>
