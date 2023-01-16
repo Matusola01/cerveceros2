@@ -11,6 +11,7 @@ import NavImg from '../Images/navImg.png';
 import app from '../firebase';
 import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore';
 import Hero from '../components/Hero';
+import Footer from '../components/Footer';
 
 const db = getFirestore(app);
 
@@ -30,6 +31,7 @@ export default function Home({ users }) {
 					{userLoged && <Credential props={userLoged} />}
 					{!userLoged && <Form />}
 				</div>
+				<Footer />
 			</div>
 		);
 	} else {
@@ -46,6 +48,7 @@ export default function Home({ users }) {
 					<NavLanding />
 					<Hero heading="SINDICATO CERVECEROS SALTA" message=" " />
 				</div>
+				<Footer />
 			</div>
 		);
 	}
