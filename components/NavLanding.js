@@ -20,9 +20,9 @@ const NavLanding = () => {
 
 	useEffect(() => {
 		const changeColor = () => {
-			if (window.scrollY >= 1000000) {
-				setColor('#ffffff');
-				setTextColor('#000000');
+			if (window.scrollY >= 150) {
+				setColor('#1c4563');
+				setTextColor('#ffffff');
 			} else {
 				setColor('transparent');
 				setTextColor('#ffffff');
@@ -35,25 +35,24 @@ const NavLanding = () => {
 		<div style={{ backgroundColor: `${color}` }} className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
 			<div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
 				<div>
-
 					{/* <Image
 						src='https://cdn.discordapp.com/attachments/812652267320115231/1052996507042848890/navImg.png'
 						className="h-20 w-20"
 						alt="Cerveza Salta Logo"
 					/> */}
 					<Image
-						  alt="Mountains"
-						  src={NavImg}
-						  placeholder="blur"
-						  width={125}
-						  height={125}
-						  style={{
+						alt="Mountains"
+						src={NavImg}
+						placeholder="blur"
+						width={65}
+						height={65}
+						style={{
 							maxWidth: '100%',
 							height: 'auto',
-						  }}
+						}}
 					/>
 				</div>
-			
+
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
 					<li className="p-4">
 						<Link href="/">Inicio</Link>

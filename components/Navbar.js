@@ -41,8 +41,8 @@ const Navbar = () => {
 						alt="Mountains"
 						src={NavImg}
 						placeholder="blur"
-						width={125}
-						height={125}
+						width={65}
+						height={65}
 						style={{
 							maxWidth: '100%',
 							height: 'auto',

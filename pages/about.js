@@ -1,14 +1,21 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import NavLanding from '../components/NavLanding';
+import About from '../components/About';
+import Footer from '../components/Footer';
 
 const about = () => {
+	function handleOnClick(e) {
+		e.preventDefault();
+		window.location.href = 'members';
+	}
+
 	return (
 		<div>
 			<NavLanding />
 			<div className="flex items-center justify-center h-screen mb-12 mt-32 ">
 				{/* Overlay */}
-				<div className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 z-[2]" />
+				<div className="absolute top-0 left-0 right-0 bottom-0 z-[2]" />
 				<div className="p-5 text-white text-center font-abc z-[2] min-[320px]:mt-20">
 					<b className="mx-5 mb-10 mt-10 text-center text-white text-6xl opacity-85 font-totifont xl:text-5xl sm:text-3xl min-[320px]:text-2xl">
 						¿QUIENES SOMOS?
@@ -45,6 +52,7 @@ const about = () => {
 						<div class="flex space-x-2 justify-center">
 							<div>
 								<button
+									onClick={handleOnClick}
 									type="button"
 									class="inline-block px-6 py-2 mb-10 border-2 border-gray-200 text-gray-200 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
 								>
@@ -55,6 +63,7 @@ const about = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };
