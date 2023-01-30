@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Footer() {
 	return (
-		<footer className="bg-slate-800 shadow bottom-0">
+		<footer className="bg-black/80 w-screen h-full sticky top-[100vh]">
 			<div className="container px-4 py-2 mx-auto">
 				<div className="lg:flex items-center px-6">
 					<div className="w-24 h-22 mr-6">
@@ -25,7 +25,7 @@ export default function Footer() {
 					<div className="w-full -mx-6 lg:w-2/5">
 						<div className="px-6">
 							<p className="max-w-md mt-2 text-gray-200 dark:text-gray-400">
-								Sindicato de cerveceros de Salta.
+								Sindicato cerveceros Salta.
 							</p>
 							<div className="flex mt-4 -mx-2">
 								<Link
@@ -45,13 +45,13 @@ export default function Footer() {
 						<div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
 							<div>
 								<h3 className="text-gray-200 uppercase dark:text-white">Contacto:</h3>
-								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 hover:underline">
-									Tel: 4210120
+								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 ">
+									Tel: (+54) 3874210120
 								</span>
-								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 hover:underline">
+								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 ">
 									Email: acachagua@sindicatocervecerossalta.com.ar
 								</span>
-								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 hover:underline">
+								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 ">
 									Dirección: Adolfo Güemes 1067. CP 4400. Salta, Argentina.
 								</span>
 							</div>

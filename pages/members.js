@@ -8,7 +8,6 @@ function members() {
 		<div>
 			<NavLanding />
 			<About />
-			<Footer />
 		</div>
 	);
 }

@@ -21,7 +21,7 @@ const NavLanding = () => {
 	useEffect(() => {
 		const changeColor = () => {
 			if (window.scrollY >= 150) {
-				setColor('#1c4563');
+				setColor('#00000090');
 				setTextColor('#ffffff');
 			} else {
 				setColor('transparent');
@@ -65,7 +65,7 @@ const NavLanding = () => {
 					</li>
 					<button
 						onClick={handleOnClick}
-						className="border-gray-700 hover:bg-black/30 text-white py-0.5 px-4 rounded-lg"
+						className="border-gray-700 hover:bg-white/30 text-white py-0.5 px-4 rounded-lg"
 					>
 						Ingresar
 					</button>
