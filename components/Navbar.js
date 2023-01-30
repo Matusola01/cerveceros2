@@ -23,8 +23,8 @@ const Navbar = () => {
 	useEffect(() => {
 		const changeColor = () => {
 			if (window.scrollY >= 90) {
-				setColor('#ffffff');
-				setTextColor('#000000');
+				setColor('#00000090');
+				setTextColor('#ffffff');
 			} else {
 				setColor('transparent');
 				setTextColor('#ffffff');
@@ -50,21 +50,12 @@ const Navbar = () => {
 					/>
 				</Link>
 				<ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-					{/* <li className="p-4">
-						<Link href="/#">Home</Link>
-					</li>
-					<li className="p-4">
-						<Link href="/#about">Quienes Somos</Link>
-					</li>
-					<li className="p-4">
-						<Link href="/#work">Novedades</Link>
-					</li> */}
 					<li className="p-4">
 						<Link href="/">Inicio</Link>
 					</li>
 					<li className="p-4">
 						<a
-							className="border-gray-700 hover:bg-black/30 text-white py-0.5 px-4 rounded-lg"
+							className="border-gray-700 hover:bg-white/30 text-white py-0.5 px-4 rounded-lg"
 							onClick={handleOnClick}
 						>
 							Salir
@@ -94,7 +85,7 @@ const Navbar = () => {
 						</li>
 						<li className="p-4 text-4xl">
 							<a
-								className="border-gray-700 hover:bg-gray-100 hover:text-black text-white py-2 px-4 rounded-full"
+								className="border-gray-700 hover:bg-white/30 hover:text-black text-white py-2 px-4 rounded-full"
 								onClick={handleOnClick}
 							>
 								Salir

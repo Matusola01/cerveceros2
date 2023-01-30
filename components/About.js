@@ -3,8 +3,8 @@ import React from 'react';
 export default function About() {
 	return (
 		<div class="container mt-4 mx-auto py-20">
-			<div class="font-totifont text-center m-2 text-4xl">
-				<b>Cómision directiva</b>
+			<div class="mx-5 mb-10 mt-10 text-center text-white text-6xl opacity-85 font-totifont xl:text-5xl sm:text-3xl min-[320px]:text-2xl">
+				<b>COMISION DIRECTIVA</b>
 			</div>
 			<br></br>
 			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-1">

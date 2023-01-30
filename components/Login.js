@@ -30,7 +30,7 @@ export default function Login() {
 	return (
 		<div>
 			<NavLanding />
-			<div className="mt-64 flex-1 text-xs sm:text-sm flex flex-col justify-center items-center gap-2 sm:gap-4">
+			<div className="mt-64 flex-1 text-xs sm:text-sm mb-96 flex flex-col justify-center items-center gap-2 sm:gap-4">
 				<h1 className="font-extrabold text-slate-200 select-none text-2xl sm:text-4xl uppercase mb-16">
 					{isLoggingIn ? 'Iniciar sesion' : 'Registrarse'}
 				</h1>
