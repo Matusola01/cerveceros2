@@ -21,25 +21,21 @@ const about = () => {
 						¿QUIENES SOMOS?
 					</b>
 					<div className="container px-5 py-4">
-						<p className="py-5 text-justify text-2xl xl:text-xl sm:text-sm min-[320px]:text-[10px]">
+						<p className="py-5 text-justify text-2xl xl:text-xl sm:text-sm min-[320px]:text-[14px]">
 							El Sindicato Cerveceros Salta, tiene sus orígenes en la fecha 04/01/1962, por aquel entonces
 							y gracias a Jorge Lavadenz Secretario General, se pudo dar inicio a la conformación de
 							nuestro sindicato, el mismo con un exponencial crecimiento y vigencia al día de hoy.
 							<br />
-							<br />
 							Nació como una necesitada de dar asistencia y protección a todos los compañeros y compañeras
 							que aglutina esta entidad. Siempre respetando los convenios y sobre todo los valores.
 							<br />
-							<br />
 							Trabajar para la familia Cervecera en lo social, gremial y beneficios para nuestros
 							afiliados.
-							<br />
 							<br />
 							Tener un Canal de acceso a la información para todos los afiliados al Sindicato. Tratando de
 							llegar más rápido y de mejor manera a los compañeros. Es necesario mencionar, que nuestro
 							sindicato fundado el 24 de septiembre del año 1962. Es un componente integrado formalmente a
 							la CGT
-							<br />
 							<br />
 							Actualmente está siendo dirigido y administrado, por el Secretario General y por la
 							siguiente comisión directiva, la cual se expone a continuación...
