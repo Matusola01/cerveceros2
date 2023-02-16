@@ -12,7 +12,7 @@ export default function News() {
 						NOVEDADES
 					</b>
 					<div className="container px-5 py-4">
-						<p className="py-5 text-justify text-2xl xl:text-xl sm:text-sm min-[320px]:text-[10px]">
+						<p className="py-5 text-justify text-2xl xl:text-xl sm:text-sm min-[320px]:text-[14px]">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu magna vel ligula
 							sollicitudin varius. Maecenas laoreet a tortor quis facilisis. Duis a tincidunt nulla, eget
 							accumsan massa. Suspendisse at ligula eu mauris ultrices feugiat. Vestibulum rhoncus elit
@@ -21,7 +21,6 @@ export default function News() {
 							rhoncus diam. Quisque odio ex, aliquet at leo a, fringilla pharetra eros. Etiam aliquam
 							lacus eget sapien commodo rhoncus. Vestibulum mollis volutpat mattis. Sed sit amet euismod
 							lorem.
-							<br />
 							<br />
 							Nullam faucibus libero sed sapien imperdiet fringilla. Proin mattis condimentum nulla, eget
 							imperdiet sem posuere eget. Curabitur et ante scelerisque, cursus urna id, luctus nulla.
