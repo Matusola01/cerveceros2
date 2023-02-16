@@ -35,11 +35,6 @@ const NavLanding = () => {
 		<div style={{ backgroundColor: `${color}` }} className="fixed left-0 top-0 w-full z-10 ease-in duration-300">
 			<div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
 				<div>
-					{/* <Image
-						src='https://cdn.discordapp.com/attachments/812652267320115231/1052996507042848890/navImg.png'
-						className="h-20 w-20"
-						alt="Cerveza Salta Logo"
-					/> */}
 					<Image
 						alt="Mountains"
 						src={NavImg}

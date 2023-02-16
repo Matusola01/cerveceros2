@@ -10,6 +10,7 @@ export default function Credential({ props }) {
 					<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
 						<Image src={CredH} className="h-full" />
 						<span className="absolute items-center self-start p-2 text-neutral-900 leading-none font-semibold ml-16 2xl:mt-14 xl:mt-12 lg:mt-8 md:mt-6 sm:mt-3 min-[320px]:mt-2">
+							{/* FOTO DEL CARNET */}
 							{/* <div className="float-right 2xl:ml-14 xl:ml-10 lg:ml-5 md:ml-4 sm:ml-3 min-[320px]:ml-3">
 								<img
 									className="2xl:h-36 xl:h-32 lg:h-28 md:h-24 sm:h-20 min-[320px]:h-10"
@@ -46,6 +47,7 @@ export default function Credential({ props }) {
 					<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
 						<Image src={CredM} className="h-full" />
 						<span className="absolute items-center self-start p-2 text-neutral-900 leading-none font-semibold ml-16 2xl:mt-14 xl:mt-12 lg:mt-8 md:mt-6 sm:mt-3 min-[320px]:mt-2">
+							{/* FOTO DEL CARNET */}
 							{/* <div className="float-right 2xl:ml-14 xl:ml-10 lg:ml-5 md:ml-4 sm:ml-3 min-[320px]:ml-3">
 								<img
 									className="2xl:h-36 xl:h-32 lg:h-28 md:h-24 sm:h-20 min-[320px]:h-10"

@@ -2,16 +2,11 @@ import React from 'react';
 import Credential from '../components/Credential';
 import Navbar from '../components/Navbar';
 import { useAuth } from '../context/AuthContext';
-import Login from '../components/Login';
 import Head from 'next/head';
 import Form from '../components/Form';
 import NavLanding from '../components/NavLanding';
-import NavImg from '../Images/navImg.png';
-
 import app from '../firebase';
 import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore';
-import Hero from '../components/Hero';
-import Footer from '../components/Footer';
 import Landing from '../components/Landing';
 
 const db = getFirestore(app);
@@ -37,7 +32,6 @@ export default function Home({ users }) {
 			</div>
 		);
 	} else {
-		// return <Login />;
 		return (
 			<div>
 				<Head>
