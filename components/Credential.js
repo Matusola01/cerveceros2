@@ -6,7 +6,7 @@ export default function Credential({ props }) {
 	let filter = props?.map(element => {
 		if (element?.genre === 'Masculino') {
 			return (
-				<div className="flex flex-wrap justify-center mb-20 mt-36">
+				<div key={element.id} className="flex flex-wrap justify-center mb-20 mt-36">
 					<div className="relative overflow-hidden flex w-full h-full rounded-r ">
 						<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
 							<Image src={CredH} className="h-full" />
@@ -35,7 +35,7 @@ export default function Credential({ props }) {
 			);
 		} else {
 			return (
-				<div className="flex flex-wrap justify-center mb-20 mt-36">
+				<div key={element.id} className="flex flex-wrap justify-center mb-20 mt-36">
 					<div className="relative overflow-hidden flex w-full h-full rounded-r ">
 						<figure className="relative overflow-hidden flex justify-center items-center w-full h-full">
 							<Image src={CredM} className="h-full" />

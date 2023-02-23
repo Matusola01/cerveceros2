@@ -36,7 +36,7 @@ const NavLanding = () => {
 			<div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
 				<div>
 					<Image
-						alt="Mountains"
+						alt="Sindicato Cerveceros Salta"
 						src={NavImg}
 						placeholder="blur"
 						width={65}
