@@ -13,8 +13,12 @@ const db = getFirestore(app);
 
 export default function Home({ users }) {
 	const { currentUser } = useAuth();
+	const familia = [];
+	const userLoged = users?.find(user => user.email === currentUser?.email);
+	const afiliados = users?.find(user => user.idCard === userLoged?.DNI);
+	const hola = familia.push(userLoged);
+	const hola2 = familia.push(afiliados);
 	if (currentUser) {
-		const userLoged = users?.find(user => user.email === currentUser.email);
 		return (
 			<div>
 				<div>
@@ -25,7 +29,7 @@ export default function Home({ users }) {
 					</Head>
 					<Navbar />
 					<div>
-						{userLoged && <Credential props={userLoged} />}
+						{userLoged && <Credential props={familia} />}
 						{!userLoged && <Form />}
 					</div>
 				</div>
