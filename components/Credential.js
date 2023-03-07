@@ -3,12 +3,12 @@ import CredH from '../Images/cred-H.jpeg';
 import CredM from '../Images/cred-M.jpeg';
 // import carnet from '../Images/carnet.jpg';
 export default function Credential({ props }) {
-	const locoloco = [];
-	locoloco.push(props[0]);
-	const amamnana = props[1].map(element => {
-		locoloco.push(element);
+	const affiliates = [];
+	affiliates.push(props[0]);
+	const mapRelatives = props[1].map(element => {
+		affiliates.push(element);
 	});
-	let filter = locoloco?.map(element => {
+	let credentialMap = affiliates?.map(element => {
 		if (element?.genre === 'Masculino') {
 			return (
 				<div key={element.id} className="flex flex-wrap justify-center mb-20 mt-36">
@@ -69,5 +69,5 @@ export default function Credential({ props }) {
 			);
 		}
 	});
-	return filter;
+	return credentialMap;
 }
