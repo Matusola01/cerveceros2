@@ -3,7 +3,12 @@ import CredH from '../Images/cred-H.jpeg';
 import CredM from '../Images/cred-M.jpeg';
 // import carnet from '../Images/carnet.jpg';
 export default function Credential({ props }) {
-	let filter = props?.map(element => {
+	const locoloco = [];
+	locoloco.push(props[0]);
+	const amamnana = props[1].map(element => {
+		locoloco.push(element);
+	});
+	let filter = locoloco?.map(element => {
 		if (element?.genre === 'Masculino') {
 			return (
 				<div key={element.id} className="flex flex-wrap justify-center mb-20 mt-36">
@@ -14,7 +19,7 @@ export default function Credential({ props }) {
 								<div className="float-left break-normal 2xl:ml-28 xl:ml-20 lg:ml-16 md:ml-12 sm:ml-10 min-[320px]:ml-1">
 									<div className="2xl:pl-72 xl:pl-56 lg:pl-44 md:pl-20 sm:pl-16 min-[320px]:pl-4">
 										<h2 className="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg min-[320px]:text-[11px]">
-											◾{element?.name.toUpperCase()}
+											◾{element?.name?.toUpperCase()}
 										</h2>
 									</div>
 									<div className="2xl:pl-72 xl:pl-56 lg:pl-44 md:pl-20 sm:pl-16 min-[320px]:pl-4">
@@ -24,7 +29,7 @@ export default function Credential({ props }) {
 									</div>
 									<div className="2xl:pl-72 xl:pl-56 lg:pl-44 md:pl-20 sm:pl-16 min-[320px]:pl-4">
 										<h2 className="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg min-[320px]:text-[11px]">
-											◾{element?.relationship.toUpperCase()}
+											◾{element?.relationship?.toUpperCase()}
 										</h2>
 									</div>
 								</div>
@@ -43,7 +48,7 @@ export default function Credential({ props }) {
 								<div className="float-left break-normal 2xl:ml-28 xl:ml-20 lg:ml-16 md:ml-12 sm:ml-10 min-[320px]:ml-1">
 									<div className="2xl:pl-72 xl:pl-56 lg:pl-44 md:pl-20 sm:pl-16 min-[320px]:pl-4">
 										<h2 className="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg min-[320px]:text-[11px]">
-											◾{element?.name.toUpperCase()}
+											◾{element?.name?.toUpperCase()}
 										</h2>
 									</div>
 									<div className="2xl:pl-72 xl:pl-56 lg:pl-44 md:pl-20 sm:pl-16 min-[320px]:pl-4">
@@ -53,7 +58,7 @@ export default function Credential({ props }) {
 									</div>
 									<div className="2xl:pl-72 xl:pl-56 lg:pl-44 md:pl-20 sm:pl-16 min-[320px]:pl-4">
 										<h2 className="2xl:text-4xl xl:text-3xl lg:text-2xl md:text-xl sm:text-lg min-[320px]:text-[11px]">
-											◾{element?.relationship.toUpperCase()}
+											◾{element?.relationship?.toUpperCase()}
 										</h2>
 									</div>
 								</div>

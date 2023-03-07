@@ -15,7 +15,16 @@ export default function Home({ users }) {
 	const { currentUser } = useAuth();
 	const familia = [];
 	const userLoged = users?.find(user => user.email === currentUser?.email);
-	const afiliados = users?.find(user => user.idCard === userLoged?.DNI);
+	// const userrrr = users.map(us => {
+	// 	if (us.idCard === userLoged?.DNI) {
+	// 		const arr = [];
+	// 		arr.push(us);
+	// 		return arr;
+	// 	}
+	// });
+	// console.log(userrrr);
+	const afiliados = users?.filter(user => user.idCard === userLoged?.DNI);
+	console.log(afiliados);
 	const hola = familia.push(userLoged);
 	const hola2 = familia.push(afiliados);
 	if (currentUser) {
