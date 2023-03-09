@@ -49,7 +49,7 @@ export default function Footer() {
 									Tel: (+54) 3874210120
 								</span>
 								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 ">
-									info@: acachagua@sindicatocervecerossalta.com.ar
+									email: info@sindicatocervecerossalta.com.ar
 								</span>
 								<span className="block mt-2 text-sm text-gray-200 dark:text-gray-400 ">
 									Dirección: Adolfo Güemes 1067. CP 4400. Salta, Argentina.
