@@ -21,7 +21,7 @@ const NavLanding = () => {
 	useEffect(() => {
 		const changeColor = () => {
 			if (window.scrollY >= 150) {
-				setColor('#00000090');
+				setColor('#00000070');
 				setTextColor('#ffffff');
 			} else {
 				setColor('transparent');

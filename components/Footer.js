@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Footer() {
 	return (
-		<footer className="bg-black/80 w-screen h-full sticky top-[100vh]">
+		<footer className="bg-black/70 w-screen h-full sticky top-[100vh]">
 			<div className="container px-4 py-2 mx-auto">
 				<div className="lg:flex items-center px-6">
 					<div className="w-24 h-22 mr-6">

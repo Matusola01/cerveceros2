@@ -13,7 +13,7 @@ const about = () => {
 	return (
 		<div>
 			<NavLanding />
-			<div className="flex items-center justify-center h-screen mt-0 min-[320px]:mt-36 ">
+			<div className="flex items-center justify-center h-screen mt-0 lg:mt-0 md:mt-0 min-[320px]:mt-44 mb-36 ">
 				<div className="absolute top-0 left-0 right-0 bottom-0 z-[2]" />
 				<div className="p-5 text-white text-center font-abc z-[2] ">
 					<b
@@ -22,8 +22,8 @@ const about = () => {
 					>
 						¿QUIENES SOMOS?
 					</b>
-					<div className="container px-5 py-4">
-						<p className="py-5 text-justify text-2xl xl:text-xl sm:text-sm min-[320px]:text-[14px]">
+					<div className="container px-5 py-4 bg-black/70 card bg-contain mt-10">
+						<p className="py-5 text-justify text-inherit text-2xl xl:text-xl sm:text-sm min-[320px]:text-[14px]">
 							El Sindicato Cerveceros Salta, tiene sus orígenes en la fecha 04/01/1962, por aquel entonces
 							y gracias a Jorge Lavadenz Secretario General, se pudo dar inicio a la conformación de
 							nuestro sindicato, el mismo con un exponencial crecimiento y vigencia al día de hoy.

@@ -7,15 +7,19 @@ export default function About() {
 				<b>COMISION DIRECTIVA</b>
 			</div>
 			<br></br>
-			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-1">
-				<div class="bg-black/80 card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
-					<div class="m-3">
-						<h2 class="text-lg mb-2 text-center">Secretario General</h2>
-						<p class="font-totifont  text-sm text-white hover:text-yellow-700 transition-all duration-200 text-center">
-							Alejandro Elías Cachagua
-						</p>
+			<div class="container">
+				<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 my-1 px-96 md:px-48 lg:px-80 min-[320px]:px-0">
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-xl mb-2 text-center text-yellow-700">Secretario General</h2>
+							<p class="font-totifont  text-lg text-white transition-all duration-200 text-center">
+								Alejandro Elías Cachagua
+							</p>
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 my-1">
 				<div class="bg-black/80 card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
 					<div class="m-3">
 						<h2 class="text-lg mb-2 text-center">Vocales Titulares</h2>
