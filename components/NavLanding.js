@@ -56,7 +56,7 @@ const NavLanding = () => {
 						<Link href="/about">Quienes Somos</Link>
 					</li>
 					<li className="p-4">
-						<Link href="/features">Novedades</Link>
+						<Link href="/features">Beneficios</Link>
 					</li>
 					<button
 						onClick={handleOnClick}
