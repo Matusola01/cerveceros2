@@ -11,9 +11,75 @@ export default function About() {
 				<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 my-1 px-96 md:px-48 lg:px-80 min-[320px]:px-0">
 					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
 						<div class="m-3">
-							<h2 class="text-xl mb-2 text-center text-yellow-700">Secretario General</h2>
+							<h2 class="text-xl mb-2 text-center text-yellow-700">
+								<b>Secretario General</b>
+							</h2>
 							<p class="font-totifont  text-lg text-white transition-all duration-200 text-center">
 								Alejandro Elías Cachagua
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="grid grid-cols-2  my-1 px-96 md:px-48 lg:px-80 min-[320px]:px-0">
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-lg mb-2 text-center text-yellow-700">Secretario Adjunto</h2>
+							<p class="font-totifont  text-sm text-white transition-all duration-200 text-center">
+								Apolinario Ismael Sarapura
+							</p>
+						</div>
+					</div>
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-lg mb-2 text-center text-yellow-700">Secretario Gremial</h2>
+							<p class="font-totifont  text-sm text-white transition-all duration-200 text-center">
+								Leopoldo Federico Duran
+							</p>
+						</div>
+					</div>
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-lg mb-2 text-center text-yellow-700">Secretario de Actas</h2>
+							<p class="font-totifont  text-sm text-white transition-all duration-200 text-center">
+								Mario Sebastián Soria
+							</p>
+						</div>
+					</div>
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-lg mb-2 text-center text-yellow-700">Pro-secretario de Actas</h2>
+							<p class="font-totifont  text-sm text-white transition-all duration-200 text-center">
+								Hugo Federico Gutiérrez
+							</p>
+						</div>
+					</div>
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-lg mb-2 text-center text-yellow-700">Tesorero</h2>
+							<p class="font-totifont  text-sm text-white transition-all duration-200 text-center">
+								Sandro Fabio Pereyra
+							</p>
+						</div>
+					</div>
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-lg mb-2 text-center text-yellow-700">Pro-tesorero</h2>
+							<p class="font-totifont  text-sm text-white transition-all duration-200 text-center">
+								Luis Alejandro Castro
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid grid-cols-1 my-1 px-96 md:px-48 lg:px-80 min-[320px]:px-0">
+					<div class="bg-black/80  card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200 ">
+						<div class="m-3">
+							<h2 class="text-lg mb-2 text-center text-yellow-700">
+								Secretario de Accion social y turismo
+							</h2>
+							<p class="font-totifont  text-sm text-white transition-all duration-200 text-center">
+								Edgardo Omar Sosa
 							</p>
 						</div>
 					</div>
