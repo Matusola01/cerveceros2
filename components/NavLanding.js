@@ -89,7 +89,7 @@ const NavLanding = () => {
 							<Link href="/about">Quienes Somos</Link>
 						</li>
 						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-							<Link href="/features">Novedades</Link>
+							<Link href="/features">Beneficios</Link>
 						</li>
 						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
 							<button
