@@ -19,7 +19,7 @@ export default function Credential({ props }) {
 								<div className="float-right 2xl:ml-14 xl:ml-10 lg:ml-5 md:ml-4 sm:ml-3 min-[320px]:ml-3">
 									<img
 										className="2xl:h-36 xl:h-32 lg:h-28 md:h-24 sm:h-20 min-[320px]:h-10"
-										src="https://fotomanias.com.ar/wp-content/uploads/2019/03/foto-carnet-fondo-celeste.jpg"
+										src={element?.photoURL}
 										alt="Foto de credencial 4x4"
 									/>
 								</div>
@@ -55,7 +55,7 @@ export default function Credential({ props }) {
 								<div className="float-right 2xl:ml-14 xl:ml-10 lg:ml-5 md:ml-4 sm:ml-3 min-[320px]:ml-3">
 									<img
 										className="2xl:h-36 xl:h-32 lg:h-28 md:h-24 sm:h-20 min-[320px]:h-10"
-										src="https://fotomanias.com.ar/wp-content/uploads/2019/03/foto-carnet-fondo-celeste.jpg"
+										src={element?.photoURL}
 										alt="Foto de credencial 4x4"
 									/>
 								</div>

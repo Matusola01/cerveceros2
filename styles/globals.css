@@ -3,7 +3,6 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
-
 .custom-img-big {
 	background-image: url('../Images/big.png');
 	background-position: center;
@@ -38,4 +37,3 @@
 	background-attachment: fixed;
 	background-size: cover;
 }
-

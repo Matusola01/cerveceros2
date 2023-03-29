@@ -54,6 +54,9 @@ const Navbar = () => {
 						<Link href="/">Inicio</Link>
 					</li>
 					<li className="p-4">
+						<Link href="/edit">Editar</Link>
+					</li>
+					<li className="p-4">
 						<a
 							className="border-gray-700 hover:bg-white/30 text-white py-0.5 px-4 rounded-lg"
 							onClick={handleOnClick}
@@ -90,6 +93,9 @@ const Navbar = () => {
 							>
 								Salir
 							</a>
+						</li>
+						<li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
+							<Link href="/edit">Editar</Link>
 						</li>
 					</ul>
 				</div>
