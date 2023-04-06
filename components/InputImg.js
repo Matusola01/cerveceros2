@@ -5,9 +5,11 @@ import { db, storage } from '../firebase';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { getDocs, collection, doc } from 'firebase/firestore';
 import { updateDoc } from 'firebase/firestore';
+import { useRouter } from 'next/router';
 
 function InputImg() {
 	const { currentUser } = useAuth();
+	const router = useRouter();
 
 	useEffect(() => {
 		const inputElement = document.getElementById('file-input');
@@ -26,12 +28,20 @@ function InputImg() {
 			await updateDoc(docRef, {
 				photoURL: imageUrl, // actualiza el usuario
 			});
+			router.push('/');
 		});
 	}, []);
 
 	return (
 		<div>
-			<input type="file" id="file-input" />
+			<label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file-input">
+				Actualizar imágen de credencial (usuario conectado)
+			</label>
+			<input
+				class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+				type="file"
+				id="file-input"
+			/>
 		</div>
 	);
 }

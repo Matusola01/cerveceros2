@@ -8,8 +8,12 @@ import NavLanding from '../components/NavLanding';
 import app from '../firebase';
 import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc } from 'firebase/firestore';
 import Landing from '../components/Landing';
+import LRUCache from 'lru-cache';
+import { serialize } from 'next-mdx-remote/serialize';
+import { MDXRemote } from 'next-mdx-remote';
 
 const db = getFirestore(app);
+const cache = new LRUCache({ max: 500 });
 
 export default function Home({ users }) {
 	const { currentUser } = useAuth();
@@ -52,15 +56,24 @@ export default function Home({ users }) {
 }
 
 export const getServerSideProps = async context => {
+	// Genere una clave única para esta consulta
+	const cacheKey = 'my-unique-cache-key';
+
+	// Compruebe si los resultados están en la caché
+	const cachedData = cache.get(cacheKey);
+	if (cachedData) {
+		return { props: { users: cachedData } };
+	}
+
+	// Si los resultados no están en la caché, ejecute la consulta
 	const querySnapshot = await getDocs(collection(db, 'users'));
 	const docs = [];
 	querySnapshot.forEach(doc => {
 		docs.push({ ...doc.data(), id: doc.id });
 	});
 
-	return {
-		props: {
-			users: docs,
-		},
-	};
+	// Guarde los resultados en la caché
+	cache.set(cacheKey, docs);
+
+	return { props: { users: docs } };
 };

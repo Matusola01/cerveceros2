@@ -10,7 +10,9 @@
   },
   "dependencies": {
     "firebase": "^9.12.1",
+    "lru-cache": "^8.0.5",
     "next": "12.3.1",
+    "next-mdx-remote": "^4.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1"
