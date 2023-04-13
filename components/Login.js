@@ -43,14 +43,14 @@ export default function Login() {
 					type="text"
 					value={email}
 					onChange={e => setEmail(e.target.value)}
-					placeholder="Dirección email"
+					placeholder="Nombre@apellido.com"
 					className="outline-none duration-300 border-b-2 border-solid border-white focus:border-cyan-500 text-slate-900 p-2 w-full max-w-[40ch]"
 				/>
 				<input
 					value={password}
 					onChange={e => setPassword(e.target.value)}
 					type="password"
-					placeholder="Contraseña"
+					placeholder="DNI"
 					className="outline-none text-slate-900 p-2 w-full max-w-[40ch] duration-300 border-b-2 border-solid border-white focus:border-cyan-500"
 				/>
 				<button
